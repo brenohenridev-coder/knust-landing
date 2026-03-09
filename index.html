@@ -990,7 +990,7 @@
             <h2>Entre em Contato</h2>
             <p>Siga-me e envie mensagem para agendamentos</p>
             <div class="social-buttons">
-                <a href="https://wa.me/5521994347789?text=Olá%20Matheus!%20Gostaria%20de%20agendar%20uma%20%20de%20canto." target="_blank" class="social-btn whatsapp">
+                <a href="https://wa.me/5521994347789?text=Ol%C3%A1%20Matheus%2C%20gostaria%20de%20marcar%20uma%20agenda." target="_blank" class="social-btn whatsapp">
                     <span class="icon">💬</span>
                     <span class="text">WhatsApp</span>
                 </a>
@@ -1009,32 +1009,27 @@
     </footer>
 
     <script>
-        // Seu número do WhatsApp - SUBSTITUA AQUI
-        const whatsappNumber = "5521994347789"; // Formato: 55 + DDD + número
-        
-        // Seu usuário do Instagram - SUBSTITUA AQUI
-        const instagramUser = "emytheus01"; // Seu usuário sem @
+    const whatsappNumber = "5521994347789";
+    const instagramUser = "emytheus01";
 
-        function abrirWhatsapp() {
-            const mensagem = "Olá Matheus! Gostaria marcar uma agenda com você.";
-            const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(mensagem)}`;
-            window.open(url, '_blank');
-        }
+    function abrirWhatsapp() {
+        const mensagem = "Olá Matheus, gostaria de marcar uma agenda.";
+        const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(mensagem)}`;
+        window.open(url, '_blank');
+    }
 
-        function toggleMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('active');
-        }
+    function toggleMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('active');
+    }
 
-        // Fechar menu ao clicar em um link
-        document.querySelectorAll('.mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('mobileMenu').classList.remove('active');
-            });
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.remove('active');
         });
+    });
 
-        // Atualizar links de contato
-        document.getElementById('instagramLink').href = `https://instagram.com/${instagramUser}`;
-    </script>
+    document.getElementById('instagramLink').href = `https://instagram.com/${instagramUser}`;
+</script>
 </body>
 </html>
